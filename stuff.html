@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="description" content="Web Portfolio.">
+		<link rel="stylesheet" type="text/css" href="portfolio.css" title="Default">
+		<title>Katie Andrews Design</title>
+		
+		<script type="text/javascript">
+	
+		var months = new Array();
+			months[0] = "January";
+			months[1] = "February";
+			months[2] = "March";
+			months[3] = "April";
+			months[4] = "May";
+			months[5] = "June";
+			months[6] = "July";
+			months[7] = "August";
+			months[8] = "September";
+			months[9] = "October";
+			months[10] = "November";
+			months[11] = "December";
+			
+			
+			
+			var seasons = new Array();
+			seasons[0] = "Winter";
+			seasons[1] = "Winter";
+			seasons[2] = "Spring";
+			seasons[3] = "Spring";
+			seasons[4] = "Spring";
+			seasons[5] = "Spring";
+			seasons[6] = "Summer";
+			seasons[7] = "Summer";
+			seasons[8] = "Autumn";
+			seasons[9] = "Autumn";
+			seasons[10] = "Autumn";
+			seasons[11] = "Winter";
+			
+			function listMonths(){
+				var index = 0;
+				var myHTML = "";
+				while (index < months.length){
+					var newLine = "<li>" + (months[index]) + "</li>";
+					index = index +1;
+					myHTML = myHTML + newLine;
+				}
+				document.getElementById("moList").innerHTML = myHTML;
+			
+			}
+			
+			function searchMonths(){
+				var searchTerm = prompt("Type in a month");
+				var index = 0;
+					while (index < 12) {
+						if (months[index] == searchTerm) {
+							alert(searchTerm + index);
+						}
+						index = index +1;
+					}
+			}
+			
+			function monthSeason(){
+				var searchTerm = prompt("Type in a season");
+				var index = 0;
+				var myHTML = "";
+				while (index < seasons.length){
+					
+					if (seasons[index] == searchTerm) {
+						/* This part is the only part not validating, I can't figure out why*/
+						var newLine = "<li>" + (months[index]) + "</li>";
+						index = index +1;
+						myHTML = myHTML + newLine;
+						
+					} else {
+					index = index + 1;
+					}
+					
+				}
+				document.getElementById("moList").innerHTML = myHTML;
+			}
+
+			
+			function nameFunction() {
+				var userName = prompt("Please enter your name");
+				document.getElementById ("nameHeader").innerHTML= ("Welcome, " +userName+ "!");
+			}
+
+
+		
+			
+		</script>	
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="header">
+				<img src= "header.png" alt= "header" />
+			
+			</div>
+			
+				<div id="mainSection">
+						<div id= "navBar">
+					<ul>
+						<li><a href="Portfolio.html">Home</a> &nbsp; &nbsp;  &nbsp;  &nbsp; </li>
+						<li><a href="contactME.html">Contact</a>  &nbsp; &nbsp; &nbsp; &nbsp; </li>
+						<li><a href="work.html">Portfolio</a> &nbsp;  &nbsp;  &nbsp;  &nbsp; </li>  
+						<li><a href="rates.html">Rates and Services</a> &nbsp;  &nbsp;  &nbsp;  &nbsp; </li>
+						<!--<li><a href="stuff.html">What is Javascript?</a> &nbsp;  &nbsp;  &nbsp;  &nbsp; </li> -->
+						
+					</ul>
+					 
+					
+						</div>
+						<div id= "text" class= "javascript">
+							<h3 id= "nameHeader">What is Javascript?</h3>
+							<p> Javascript, by definition, is script used to modify the behavior of web pages. 
+								It is combined with HTML to create an interactive document. </p>
+					<p> 
+						
+			    		<button onclick = "nameFunction();">Prompt Capability</button>
+						<button onclick= "listMonths();">Listing Capability</button>
+						<button onclick= "monthSeason();">Search Capability</button>
+						
+				 	</p>
+					
+					<ul id= "moList">
+						
+						<li class= "monthsList"></li>
+						<li class= "monthsList"></li>
+						
+					</ul>
+					<br />
+						</div>
+						
+						
+				
+				</div>
+				
+						<div id= "icons" />
+							<a href= "http://www.facebook.com/profile.php?id=1021669565"><img src= "facebook_128x128.png" alt= "facebook" height="40px" width= "40px"/></a>
+							<a href= "mailto:katie.andrews94@gmail.com"><img src= "mail_128x128.png" alt= "mail" height="40px" width= "40px" /></a>
+							<a href="http://www.linkedin.com/profile/view?id=115554049&trk=tab_pro"><img src= "linkedin_64x64.png" alt= "linkedin" height="40px" width= "40px" /></a>
+						</div>
+		
+						
+				<div id= "footer">
+					<br />
+					Copyright 2010 by Katie Andrews
+				</div>	
+				
+		</div>
+	</body>
+</html>
