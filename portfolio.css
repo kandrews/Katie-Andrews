@@ -1,0 +1,166 @@
+html {
+	
+}
+
+body {
+	height: 433px;
+	width: 910px;
+
+}
+
+.float_right{
+	float: right;
+}
+.cb { 
+	clear:both; 
+}
+
+#container{
+	
+	align: center;
+}
+
+#content{
+	height:20%;
+	clear:both;
+	margin-left:18.8%;
+	margin-right:18.8%;
+}
+li{
+	display:inline;
+}
+
+#image{
+	width: 20%;
+	float: left;
+}
+
+#main{
+	width: 20%;
+	float:right;
+}
+
+/*
+Complicated nav links start here
+*/
+
+#nav{
+	display: inline;
+}
+
+#portfolio{
+  width: 174px;
+  height: 40px;
+  padding-right: 30px;
+  background: url("portlink.gif") no-repeat 0 0;
+
+}
+
+#portfolio:hover
+{ 
+  background-position: 0 -36px;
+}
+
+#portfolio span
+{
+  position: absolute;
+  top: -999em;
+}
+
+
+#about{
+  width: 145px;
+  background-color: red;
+  padding: 0px;
+  height: 31px;
+  background: url("aboutlink.gif") no-repeat 0 0;
+
+}
+
+
+#about:hover
+{ 
+  background-position: 0 -32px;
+}
+
+#about span
+{
+  position: absolute;
+  top: -999em;
+}
+
+#contact{
+  width: 166px;
+  height: 26px;
+  background: url("contactlink.gif") no-repeat 0 0;
+
+}
+
+
+#contact:hover
+{ 
+  background-position: 0 -28px;
+}
+
+#contact span
+{
+  position: absolute;
+  top: -999em;
+}
+
+#menuList, #footerList {
+	list-style-type:none;
+	margin-left: 15%;
+	padding:0px;
+	width: 800px;
+	height: 5%;
+	font-size:11px;
+	line-height:14pt;
+	text-align: left;
+
+}
+
+
+#menuList li, #footerList li
+{
+	float:left;
+	height: 30px;
+
+}
+
+#menuList a, #footerList a{
+	display:block;
+	padding:9px 0px;
+	text-decoration:none;
+	width:80%;
+	height: 15px;
+}
+
+#menuList li{
+	width: 30%;
+	padding-right: 2%;
+	height: 3%;
+}
+
+#menuList li.extraPixel{
+	width: 134px;
+}
+
+
+
+#menuList a:hover { 
+	text-decoration: underline; 
+}
+
+#footer{ 
+	width: 100%;
+	margin-left: 18.7%;
+}
+
+#copyright{
+	font-size: 10px;
+	color: gray;
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	
+}

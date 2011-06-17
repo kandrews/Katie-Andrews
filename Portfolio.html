@@ -5,19 +5,61 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=8" /> 
 	<meta content="keywords" /> 
 	<meta content="description" /> 
-	<link rel="shortcut icon" href="images/favicon.png" /> 
+	<link rel="shortcut icon" href="" /> 
 
 	<title>Katie Andrews Design</title> 
-		<style type= "text/css">
-			html{
-				background-color: #e8e8e8;
-				text-align: center;
-			}
-			
-		</style>
+ 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js"></script>
+		<link rel="stylesheet" href="portfolio.css" type="text/css"/> 
+	<script type="text/javascript">
+	$(document).ready(function() {
+   	 $('.slideshow').cycle({
+		fx: 'fade' 
+	});
+});
+	</script>
 	</head>
+	
 	<body>
-                        <br />
-			<img src= "message.png" alt= "message" />
+		
+		<div id= "container">	
+		<div  id= "menuList">
+				<ul>
+					<li><a id="portfolio" href="#" title="My Work"><span>Portfolio</span></a></li>
+					<li><a id="about" class= "float_right" href="#" title="About"><span>About</span></a></li>
+					<li><a id="contact" class= "float_right" href="#" title="Contact"><span>Contact</span></a></li>
+				</ul>
+		</div>
+			<div id="content">
+				
+				<div id= "image">
+					<img src="content_image.png" alt="" />
+				</div>
+				
+				<div id= "main">
+					<div class="slideshow">
+						
+						<img src= "image1.png" alt= "" />
+						<img src= "image2.png" alt= "" />
+						<img src= "image3.png" alt= "" />
+								<!--<img src= "images/home_photo4.png" alt= "" />
+								<img src= "images/home_photo5.png" alt= "" />-->	
+							
+					</div>
+				</div>
+				
+			</div>
+			<br class="cb"/>
+			
+			<div id="footer">
+				<a href= ""><img src="facebook.png" height= "30px" width="31px" alt= ""/></a>
+				<a href= "http://www.linkedin.com/pub/katie-andrews/32/847/681"><img src="in.png" height= "30px" width="31px" alt= "" /></a>
+				<div id= "copyright">
+					&copy; 2011 by Katie Andrews
+				</div>
+			</div>
+			
+			</div>
+		
 	</body>
 </html>
