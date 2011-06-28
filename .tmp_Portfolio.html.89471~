@@ -6,6 +6,7 @@
 	<meta content="keywords" /> 
 	<meta content="description" /> 
 	<link rel="shortcut icon" href="" /> 
+	<link rel="shortcut icon" href="favicon.png" /> 
 
 	<title>Katie Andrews Design</title> 
  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
@@ -42,8 +43,6 @@
 						<img src= "image1.png" alt= "" />
 						<img src= "image2.png" alt= "" />
 						<img src= "image3.png" alt= "" />
-								<!--<img src= "images/home_photo4.png" alt= "" />
-								<img src= "images/home_photo5.png" alt= "" />-->	
 							
 					</div>
 				</div>
